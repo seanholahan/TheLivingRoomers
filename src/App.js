@@ -4,6 +4,7 @@ import './App.css';
 import {
   Route,
   BrowserRouter,
+  HashRouter,
   NavLink,
   Switch
 } from "react-router-dom";
@@ -34,7 +35,7 @@ class App extends Component {
     return (
       // this.state.isLoading ? console.log("hi") :
       <div>
-<BrowserRouter>
+<HashRouter>
           <div className="nav">
           <div className="internalLinks">
 
@@ -65,7 +66,7 @@ class App extends Component {
 
 
 
-        </BrowserRouter>
+        </HashRouter>
       </div>
     );
   }
