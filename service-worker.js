@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/seanholahan/TheLivingRoomers/precache-manifest.882a2a5d14922ad3a4d1d69e31e86a3e.js"
+  "/TheLivingRoomers/precache-manifest.a6bf401c641feb4961aaae5e5684cb3b.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/seanholahan/TheLivingRoomers/index.html", {
+workbox.routing.registerNavigationRoute("/TheLivingRoomers/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
