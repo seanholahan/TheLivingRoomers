@@ -14,6 +14,13 @@ body {
   background-color: grey;
 }
 
+h1 {
+  font-family: 'Righteous', cursive;
+  letter-spacing: 2px;
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+
 
 img {
 
@@ -25,18 +32,24 @@ img {
   padding-top: 10px;
 }
 
+
+
 .nav {
   position: absolute;
-  background-color: transparent;
+  background-color: transprent;
+  /* opacity: .8; */
   flex:1;
   display: flex;
-  justify-content: space-between;
+  justify-content:flex-start;
   align-items: center;
   width:100vw;
 }
 
+
+
 .link {
-  color: #FFF;
+  color: white;
+  letter-spacing: 1px;
   font-weight: bold;
   text-decoration: none;
   padding: 30px;
@@ -45,7 +58,7 @@ img {
 }
 
 .internalLinks {
-  width:100vw;
+  
   display: flex;
   justify-content: center;
   text-align: center;

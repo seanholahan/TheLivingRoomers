@@ -33,7 +33,7 @@ export default Navigation;
 
       <li><a href="/music">Music</a></li>
       <li><a href="/">Merch</a></li>
-      <img className="icon" src={require('../assets/livingRoomersLogo.png')}/>
+      <img className="icon" src={require('../assets/livingRoomersLogo2.png')}/>
       <li><a href="/shows">Shows</a></li>
       <li><a href="/CONTACT">Contact</a></li>
     </ul>

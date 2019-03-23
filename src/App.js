@@ -17,6 +17,7 @@ import Home from './home/home';
 import Music from './music/music';
 import Shows from './shows/shows';
 import Contact from './contact/contact';
+import Merch from './merch/merch';
 
 
 
@@ -38,12 +39,14 @@ class App extends Component {
 <HashRouter>
           <div className="nav">
           <div className="internalLinks">
-
+          <NavLink exact to="/" className="icon">
+          <img className="icon" src={require('./assets/livingRoomersLogo2.png')}/>
+          </NavLink>
             <NavLink exact to="/music" className="link">Music</NavLink>
-            <NavLink exact to="/" className="link">Merch</NavLink>
-            <img className="icon" src={require('./assets/livingRoomersLogo.png')}/>
+            <NavLink exact to="/merch" className="link">Merch</NavLink>
+
             <NavLink exact to="/shows" className="link">Live</NavLink>
-            <NavLink exact to="/contact" className="link">Contact</NavLink>
+            <NavLink exact to="/contact" className="link">Book</NavLink>
           </div>
 
           </div>
@@ -59,6 +62,7 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/music" component={Music} />
             <Route path="/contact" component={Contact} />
+            <Route path="/merch" component={Merch} />
           </Switch>
           </CSSTransition>
           </TransitionGroup>

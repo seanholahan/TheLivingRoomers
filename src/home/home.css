@@ -7,17 +7,42 @@
   align-self: flex-end;
   position: absolute;
   background-size: cover;
-
+}
+.SpotifyPlayer {
+  align-self: center;
 }
 
-.home {
-
-  display: flex;
-  background-color: #282c34;
-  justify-content: center;
-  align-items: stretch;
+.bgContainer {
+  width:100vw;
+  height: calc(100vh - 80px);
+  top: 0;
   background-image: url( '../assets/bg.png' );
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+
+@media only screen and (max-width: 650px) {
+  .bgContainer {
+
+    background-image: url( '../assets/mobileHome.jpg' );
+
+  }
+}
+
+.home {
+
+
+  background-color: #282c34;
+
+
+
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+
 }

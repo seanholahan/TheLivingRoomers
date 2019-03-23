@@ -1,9 +1,13 @@
 #contact {
   width:100vw;
-  height: 500vh;
+  height: 100vh;
   background-color: blue;
   display: flex;
   justify-content: center;
+  background-image: url( '../assets/blue.jpg' );
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 
 }
 
@@ -35,6 +39,10 @@
      margin-top: 6px;
      margin-bottom: 16px;
      resize: vertical;
+     border: none;
+     border-radius: 0;
+     box-sizing: border-box;
+     opacity:.7;
 }
 
  input[type=submit] {
@@ -47,6 +55,13 @@
 }
  input[type=submit]:hover {
      background-color: #45a049;
+}
+
+label {
+  color: white;
+}
+input {
+
 }
  .container {
      border-radius: 5px;
