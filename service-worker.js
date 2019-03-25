@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/TheLivingRoomers/precache-manifest.e21ea0f328dc11ecae43c1deda0bd956.js"
+  "/TheLivingRoomers/precache-manifest.c3eea13b5e2fdc5f5af04c7993252461.js"
 );
 
 workbox.clientsClaim();
