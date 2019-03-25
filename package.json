@@ -9,6 +9,7 @@
     "bandsintown": "^1.0.1",
     "gh-pages": "^2.0.1",
     "react": "^16.8.4",
+    "react-breakpoints": "^3.0.3",
     "react-dom": "^16.8.4",
     "react-player": "^1.9.3",
     "react-router-dom": "^5.0.0",

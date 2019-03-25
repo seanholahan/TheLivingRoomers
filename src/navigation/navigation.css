@@ -1,47 +1,73 @@
 @import url('https://fonts.googleapis.com/css?family=Righteous');
-h1, h2, p, ul, li {
-  font-family: sans-serif;
-}
-ul.header li {
-  display: inline;
-  list-style-type: none;
-  margin: 0;
-  flex-grow: 1;
-  text-align: center;
-}
-ul.header {
 
-  padding: 0;
+.nav {
+  position: absolute;
+  background-color: transprent;
+  /* opacity: .8; */
+  flex:1;
   display: flex;
-  width:100vw;
-  height:100px;
+  justify-content:flex-start;
   align-items: center;
+  width:100vw;
 }
-ul.header li a {
-  color: #FFF;
+
+#mobileNavContain {
+  position: absolute;
+}
+
+
+
+.link {
+  color: white;
+  letter-spacing: 1px;
   font-weight: bold;
   text-decoration: none;
-  padding: 20px;
-  display: inline-block;
+  padding: 30px;
   font-family: 'Righteous', cursive;
+
 }
-.content {
-  background-color: #FFF;
-  padding: 20px;
+
+#hamburger {
+  width: auto;
+height: 44px;
+padding-left: 45px;
 }
-.content h2 {
-  padding: 0;
-  margin: 0;
+
+
+.internalLinks {
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: flex-start;
+
 }
-.content li {
-  margin-bottom: 10px;
+.externalLinks {
+  display: flex;
+  justify-content: flex-end;
+
+  align-items: flex-start;
+
 }
-img {
-  flex:1;
-  position: relative;
-  height:100px;
-  width:auto;
-  padding-left:20px;
-  padding-top: 20px;
-  filter: invert(100%);
+.menuL {
+  transform-origin: bottom;
+}
+
+
+Button {
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+  .internalLinks {
+    flex-direction: column;
+    /* background-color:black; */
+    opacity:.8;
+    width: 100vw;
+
+  }
+
+  .link {
+    display: none;
+  }
 }
