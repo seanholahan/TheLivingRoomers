@@ -32,7 +32,7 @@ class Music extends Component {
     const soundcloudBoxes = soundCloudLinks.map((link) =>
                  <ReactPlayer
                  className = "song"
-
+                key = {link}
                  url= {link}
                  height = '180px'
                   />

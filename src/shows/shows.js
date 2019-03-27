@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 
 import './shows.css';
+import Fade from '@material-ui/core/Fade';
 
 class Shows extends Component {
   componentWillMount () {
@@ -21,8 +22,12 @@ class Shows extends Component {
   }
   render() {
     return (
-
+      <Fade in="false">
+        <div className="showContainer">
         <p>hi</p>
+        </div>
+        </Fade>
+
     );
   }
 }

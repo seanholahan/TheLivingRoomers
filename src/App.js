@@ -8,6 +8,7 @@ import {
   NavLink,
   Switch
 } from "react-router-dom";
+
 import AppBar from '@material-ui/core/AppBar';
 import {
   CSSTransition,
@@ -20,6 +21,7 @@ import Shows from './shows/shows';
 import Contact from './contact/contact';
 import Merch from './merch/merch';
 import Navigation from './navigation/navigation';
+import MobileMenu from './mobileMenu/mobileMenu';
 
 
 
@@ -38,24 +40,26 @@ class App extends Component {
     return (
       // this.state.isLoading ? console.log("hi") :
   //    <AppBar position="static"  style={{ background: 'transparent', boxShadow: 'none'}}></AppBar>
-//
+//<MobileMenu/>
 
       <div>
 <HashRouter>
           <Navigation/>
 
-          <Route render={({location}) => (
+
+          <Route render={({location}) => console.log("hehehe",location) || (
             <TransitionGroup>
             <CSSTransition
+            key={location.path}
 
             timeout={300}
-            className="fade">
-
-          <Switch>
+            classNames="fade">
+          <Switch location={location}>
             <Route exact path="/" component={Home} />
             <Route path="/music" component={Music} />
             <Route path="/contact" component={Contact} />
             <Route path="/merch" component={Merch} />
+            <Route path="/shows" component={Shows} />
           </Switch>
           </CSSTransition>
           </TransitionGroup>
