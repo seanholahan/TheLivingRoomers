@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: grey;
+  background-color: black;
 }
 
 
@@ -30,12 +30,31 @@ font-size: x-large;
 -webkit-text-stroke: 1px black;
 }
 
-.fade-enter {
-  opacity: 0;
+
+
+.loadComponent-appear {
+    opacity: 0;
 }
-
-.fade-enter.fade-enter-active {
-  opacity: 1;
-  transition: opacity 250ms ease-in;
-
+.loadComponent-appear.loadComponent-appear-active {
+    opacity: 1;
+    transition: all 0.6s linear;
+}
+.loadComponent-enter {
+    opacity: 0;
+}
+.loadComponent-enter.loadComponent-enter-active {
+    opacity: 1;
+    transition: all 0.6s linear 0.4s;
+}
+.loadComponent-leave {
+    opacity: 1.0;
+    position:absolute;
+    transition: all 0.6s linear 0.4s;
+    transition-delay:1s;
+}
+.loadComponent-leave.loadComponent-leave-active {
+    opacity: 1;
+    transition: all 0.6s linear;
+    position:absolute;
+    transition-delay:1s;
 }

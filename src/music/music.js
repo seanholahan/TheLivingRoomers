@@ -3,8 +3,9 @@ import React, { Component } from 'react';
 import Player from 'react-soundcloud-widget-player';
 import ReactSoundcloud from 'react-soundcloud-embed';
 import ReactPlayer from 'react-player';
-
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import './music.css';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 class Music extends Component {
 
@@ -38,13 +39,18 @@ class Music extends Component {
                   />
                  )
 
+
+
+
     return (
-    <div className="home2">
-      <div className ="soundcloudWrapper">
+
+    <div className="home2 content">
+      <div className ="soundcloudWrapper content--inner">
       {soundcloudBoxes}
 
       </div>
     </div>
+
 
 
     );

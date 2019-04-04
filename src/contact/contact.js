@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import './contact.css';
 
 class Contact extends Component {
@@ -9,10 +9,20 @@ class Contact extends Component {
     script.src = "https://widget.bandsintown.com/main.min.js";
     script.async = true;
     document.body.appendChild(script);
+    console.log("params",this.props.location.pathname);
 
   }
   render() {
     return (
+      <ReactCSSTransitionGroup
+                transitionName="example"
+                transitionAppear={true}
+                                transitionAppearTimeout={600}
+                                transitionEnterTimeout={500}
+                                transitionLeaveTimeout={600}
+                transitionAppear={true}
+                transitionName={ 'loadComponent' }
+                >
       <div id='contact'>
         <div id='formContainer'>
            <form action="/action_page.php">
@@ -32,6 +42,7 @@ class Contact extends Component {
            </form>
          </div>
       </div>
+      </ReactCSSTransitionGroup>
     );
   }
 }

@@ -8,6 +8,7 @@ import MenuList from '@material-ui/core/MenuList';
 import Grow from '@material-ui/core/Grow';
 import { Media } from 'react-breakpoints';
 import Icon from '@material-ui/core/Icon';
+import Link from 'react-router-dom/Link';
 import {
   Route,
   NavLink,
@@ -30,15 +31,15 @@ class Navigation extends Component {
   render() {
     const { anchorEl } = this.state;
     return (
-      <Media>
-        {({ breakpoints, currentBreakpoint }) =>
-          breakpoints[currentBreakpoint] > breakpoints.mobile ? (
+
 
             <div className="nav">
             <div className="internalLinks">
             <NavLink exact to="/" className="logo">
               <img className="logo" src={require('../assets/livingRoomersLogo2.png')}/>
             </NavLink>
+
+      
               <NavLink exact to="/music" className="link">Music</NavLink>
               <NavLink exact to="/merch" className="link">Merch</NavLink>
               <NavLink exact to="/shows" className="link">Live</NavLink>
@@ -60,40 +61,46 @@ class Navigation extends Component {
 
             </div>
 
-          ) : (
-            <div className="nav">
-            <div className="internalLinks">
-            <NavLink exact to="/" className="logo">
-              <img className="logo" src={require('../assets/livingRoomersLogo2.png')}/>
-            </NavLink>
-              <NavLink exact to="/music" className="link">Music</NavLink>
-              <NavLink exact to="/merch" className="link">Merch</NavLink>
-              <NavLink exact to="/shows" className="link">Live</NavLink>
-              <NavLink exact to="/contact" className="link">Book</NavLink>
 
-            </div>
-            <div className='externalLinks'>
-            <a target="_blank" href="https://open.spotify.com/artist/2nhVuKbeuDADrh4zuSYqsf" >
-              <img className="icon" src={require('../assets/spotify.png')}/>
-            </a>
-            <a target="_blank" href="https://www.instagram.com/thelivingroomers/?hl=en">
-              <img className="icon" src={require('../assets/insta.png')}/>
-            </a>
-            <a target="_blank" href="https://www.facebook.com/thelivingroomersband/" >
-              <img className="icon" src={require('../assets/facebook.png')}/>
-            </a>
 
-            </div>
-
-            </div>
-          )
-        }
-      </Media>
 
 
     );
   }
 }
+// <Media>
+//   {({ breakpoints, currentBreakpoint }) =>
+//     breakpoints[currentBreakpoint] > breakpoints.mobile ? (
+
+          // ) : (
+          //   <div className="nav">
+          //   <div className="internalLinks">
+          //   <NavLink exact to="/" className="logo">
+          //     <img className="logo" src={require('../assets/livingRoomersLogo2.png')}/>
+          //   </NavLink>
+          //     <NavLink exact to="/music" className="link">Music</NavLink>
+          //     <NavLink exact to="/merch" className="link">Merch</NavLink>
+          //     <NavLink exact to="/shows" className="link">Live</NavLink>
+          //     <NavLink exact to="/contact" className="link">Book</NavLink>
+          //
+          //   </div>
+          //   <div className='externalLinks'>
+          //   <a target="_blank" href="https://open.spotify.com/artist/2nhVuKbeuDADrh4zuSYqsf" >
+          //     <img className="icon" src={require('../assets/spotify.png')}/>
+          //   </a>
+          //   <a target="_blank" href="https://www.instagram.com/thelivingroomers/?hl=en">
+          //     <img className="icon" src={require('../assets/insta.png')}/>
+          //   </a>
+          //   <a target="_blank" href="https://www.facebook.com/thelivingroomersband/" >
+          //     <img className="icon" src={require('../assets/facebook.png')}/>
+          //   </a>
+          //
+          //   </div>
+          //
+          //   </div>
+          // )
+
+
 
 // <div id="mobileNavContain">
 //   <Button
