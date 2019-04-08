@@ -1,19 +1,19 @@
 self.__precacheManifest = [
   {
-    "revision": "ae2c37a4d443b72c5701",
+    "revision": "7f1313905e330a76e8db",
     "url": "/TheLivingRoomers/static/css/main.e06842f2.chunk.css"
   },
   {
-    "revision": "ae2c37a4d443b72c5701",
-    "url": "/TheLivingRoomers/static/js/main.c30e964e.chunk.js"
+    "revision": "7f1313905e330a76e8db",
+    "url": "/TheLivingRoomers/static/js/main.038eec6e.chunk.js"
   },
   {
     "revision": "7ec009a3832cb04984b4",
     "url": "/TheLivingRoomers/static/js/runtime~main.42a1ada4.js"
   },
   {
-    "revision": "e0e5d7e8f5a066ac7fda",
-    "url": "/TheLivingRoomers/static/js/2.359dbac9.chunk.js"
+    "revision": "80694cac3910c2cdfb5e",
+    "url": "/TheLivingRoomers/static/js/2.9a1ec87e.chunk.js"
   },
   {
     "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/TheLivingRoomers/static/media/merch.79d8b21d.png"
   },
   {
-    "revision": "96f104935b944c0f9db9eff95dd91e58",
+    "revision": "d58109517868c22b8daeba8eaed6e3ec",
     "url": "/TheLivingRoomers/index.html"
   }
 ];
