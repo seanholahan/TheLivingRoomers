@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "9c32077e1bddd6ccf181",
+    "revision": "ae2c37a4d443b72c5701",
     "url": "/TheLivingRoomers/static/css/main.e06842f2.chunk.css"
   },
   {
-    "revision": "9c32077e1bddd6ccf181",
-    "url": "/TheLivingRoomers/static/js/main.8323dac1.chunk.js"
+    "revision": "ae2c37a4d443b72c5701",
+    "url": "/TheLivingRoomers/static/js/main.c30e964e.chunk.js"
   },
   {
     "revision": "7ec009a3832cb04984b4",
@@ -68,7 +68,7 @@ self.__precacheManifest = [
     "url": "/TheLivingRoomers/static/media/merch.79d8b21d.png"
   },
   {
-    "revision": "9616df48d2413cd4826510284262f9cb",
+    "revision": "96f104935b944c0f9db9eff95dd91e58",
     "url": "/TheLivingRoomers/index.html"
   }
 ];
