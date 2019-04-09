@@ -1,22 +1,10 @@
-/* .backgroundImage {
-  flex-grow: 1;
-
-
-  flex:1;
-  flex-grow:1;
-  align-self: flex-end;
-  position: absolute;
-  background-size: cover;
-
-} */
-
 .home2 {
 
   display: flex;
   background-color: #282c34;
   justify-content: center;
   align-items: stretch;
-  background-image: url( '../assets/cover.jpg' );
+  background-image: url( '../assets/burnt.jpg' );
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -38,10 +26,12 @@ ReactPlayer {
   margin-top: 150px;
   height: calc(100vh - 150px);
   overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 
 }
 
 .song {
   margin-bottom: 60px;
+  width: 100vw;
 
 }

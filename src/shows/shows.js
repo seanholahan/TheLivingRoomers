@@ -29,7 +29,21 @@ class Shows extends Component {
                 this.props.history.push('/')
             }, 600)
         }
+
+
       }
+
+      // componentDidMount() {
+        // fetch( 'rest.bandsintown.com/artists/52-the-killers/events/app_id=48fd7be4e116c62000215ecb1c4acc78')
+        // .then(response => console.log("response",response))
+  //       var bandsintown = require('bandsintown')('48fd7be4e116c62000215ecb1c4acc78');
+  //       bandsintown
+  // .getArtistEventList('Skrillex')
+  // .then(function(events) {
+  //   console.log("events",events)
+  // });
+
+      // }
   componentWillMount () {
     // const script = document.createElement("script");
     //
@@ -49,21 +63,13 @@ class Shows extends Component {
     return (
 
 
-      <ReactCSSTransitionGroup
-                transitionName="example"
-                transitionAppearTimeout={600}
-                transitionEnterTimeout={500}
-                transitionLeaveTimeout={300}
 
-                transitionAppear={true}
-                transitionName={'loadComponent' }
-                >
           <div key={1} className="showContainer">
-          <p>ooo</p>
+          <h1>IM WORKIN ON IT</h1>
           </div>
 
 
-        </ReactCSSTransitionGroup>
+
 
 
 

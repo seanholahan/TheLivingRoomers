@@ -21,6 +21,10 @@ class Music extends Component {
 }
 
 
+  
+
+
+
   render() {
 
     const soundCloudLinks = ['https://soundcloud.com/user-634060722/screw-you',
@@ -36,6 +40,8 @@ class Music extends Component {
                 key = {link}
                  url= {link}
                  height = '180px'
+                 width= '98vw'
+                 visual='true'
                   />
                  )
 

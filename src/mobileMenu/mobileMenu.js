@@ -9,6 +9,11 @@ import Grow from '@material-ui/core/Grow';
 import { Media } from 'react-breakpoints';
 import Icon from '@material-ui/core/Icon';
 import {
+  CSSTransition,
+  TransitionGroup,
+  Transition
+} from 'react-transition-group';
+import {
   Route,
   NavLink,
   Switch
@@ -16,56 +21,78 @@ import {
 
 class MobileMenu extends Component {
 
-  state = {
-    anchorEl: null,
-  };
+  constructor(props) {
+  super(props);
+  // Don't call this.setState() here!
+  this.state = { navId: "navMobileInactive" };
+  console.log("stateBAte",this.state)
+
+}
+
+
+
+
 
   handleClick = event => {
-    this.setState({ anchorEl: event.currentTarget });
+    if (this.state.navId == "navMobileInactive") {
+      this.setState({ navId: "navMobileActive" });
+    } else  {
+      this.setState({ navId: "navMobileInactive" });
+    }
+
   };
 
-  handleClose = () => {
-    this.setState({ anchorEl: null });
-  };
+
   render() {
-    const { anchorEl } = this.state;
+
     return (
 
-            <div className="navMobile">
-            <div className='externalLinksMobile'>
-            <a target="_blank" href="https://soundcloud.com/user-634060722" >
-              <img className="iconMobile" id="soundcloudIcon" src={require('../assets/soundcloud.png')}/>
-            </a>
-            <a target="_blank" href="https://open.spotify.com/artist/2nhVuKbeuDADrh4zuSYqsf" >
-              <img className="iconMobile" src={require('../assets/spotify.png')}/>
-            </a>
-            <a target="_blank" href="https://www.instagram.com/thelivingroomers/?hl=en">
-              <img className="iconMobile" src={require('../assets/insta.png')}/>
-            </a>
-            <a target="_blank" href="https://www.facebook.com/thelivingroomersband/" >
-              <img className="iconMobile" src={require('../assets/facebook.png')}/>
-            </a>
+    <div id="mobileNavContain">
+      <div className="button"
 
-            </div>
-            <div className="internalLinksMobile">
-            <div className='navImage' id="MusicBG">
-            <NavLink exact to="/music"  className="mobileLink">Music</NavLink>
-            </div>
-            <div className='navImage' id="merchBG" >
-            <NavLink exact to="/merch"  className="mobileLink">Merch</NavLink>
-            </div>
-            <div className='navImage' id="liveBG">
-            <NavLink exact to="/shows"   className="mobileLink">Live</NavLink>
-            </div>
-            <div className='navImage' id="bookBG">
-            <NavLink exact to="/contact"   className="mobileLink">Book</NavLink>
-            </div>
+      onClick={this.handleClick}
+      >
+          <img id="hamburger" src={require('../assets/hamburgler.png')}/>
+          <img className="logo" src={require('../assets/livingRoomersLogo2.png')}/>
+      </div>
 
 
-            </div>
+          <div className="navMobile" id={this.state.navId}>
+              <div className='externalLinksMobile' >
+                  <a target="_blank" href="https://soundcloud.com/user-634060722" >
+                  <img className="iconMobile" id="soundcloudIcon" src={require('../assets/soundcloud.png')}/>
+                  </a>
+                  <a target="_blank" href="https://open.spotify.com/artist/2nhVuKbeuDADrh4zuSYqsf" >
+                  <img className="iconMobile" src={require('../assets/spotify.png')}/>
+                  </a>
+                  <a target="_blank" href="https://www.instagram.com/thelivingroomers/?hl=en">
+                  <img className="iconMobile" src={require('../assets/insta.png')}/>
+                  </a>
+                  <a target="_blank" href="https://www.facebook.com/thelivingroomersband/" >
+                  <img className="iconMobile" src={require('../assets/facebook.png')}/>
+                  </a>
+              </div>
+              <div className="internalLinksMobile">
+                  <div className='navImage' id="MusicBG" >
+                  <NavLink onClick={this.handleClick} exact to="/music"  className="mobileLink">Music</NavLink>
+                  </div>
+                  <div className='navImage' id="merchBG" >
+                  <NavLink onClick={this.handleClick} exact to="/merch"  className="mobileLink">Merch</NavLink>
+                  </div>
+                  <div className='navImage' id="liveBG">
+                  <NavLink onClick={this.handleClick} exact to="/shows"   className="mobileLink">Live</NavLink>
+                  </div>
+                  <div className='navImage' id="bookBG">
+                  <NavLink onClick={this.handleClick} exact to="/contact"   className="mobileLink">Book</NavLink>
+                  </div>
+              </div>
+              <div className="exitBox">
+              </div>
+          </div>
 
 
-            </div>
+
+      </div>
 
 
 

@@ -1,7 +1,6 @@
 #contact {
   width:100vw;
   height: 100vh;
-  background-color: blue;
   display: flex;
   justify-content: center;
   background-image: url( '../assets/blue.jpg' );
@@ -59,6 +58,7 @@
 
 label {
   color: white;
+  font-family: 'Righteous', cursive;
 }
 input {
 

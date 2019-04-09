@@ -13,8 +13,27 @@
   height: 100vh;
   padding: 0;
   margin:0;
-  bottom:0;
+  top:0;
+  transition: left 200ms;
+  z-index: 12;
 }
+
+
+
+#navMobileInactive {
+  left:-100%;
+}
+
+#navMobileActive {
+  left:0%;
+}
+
+#mobileNavContain {
+  position: absolute;
+  z-index: 12;
+}
+
+
 
 .externalLinksMobile {
   height:calc(8vh+40px);
@@ -51,6 +70,7 @@
   display: flex;
   align-items: center;
   align-content: center;
+  border-radius: 10px;
 
 }
 
@@ -81,13 +101,15 @@
 
 .mobileLink {
   color: white;
-  letter-spacing: 1px;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 30px;
-  font-family: 'Righteous', cursive;
-  width: 100vw;
-  text-align: center;
+letter-spacing: 1px;
+font-weight: bold;
+text-decoration: none;
+height: 100%;
+font-family: 'Righteous', cursive;
+width: 100vw;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 #MusicBG {
@@ -126,10 +148,12 @@
 
 #hamburger {
   width: auto;
-height: 25px;
+  height: 24px;
+  position: relative;
+  margin: 38px;
+  margin-right:20px;
+  left: 0;
 
-position: absolute;
-left:30px;
 }
 
 
@@ -151,10 +175,26 @@ left:30px;
 }
 
 
-Button {
-  background-color: transparent;
+.button {
 
+height:100px;
   width:100vw;
+}
+
+
+.slide-enter {
+  opacity: 0;
+}
+.slide-enter-active {
+  opacity: 1;
+  transition: opacity 200ms;
+}
+.slide-exit {
+  opacity: 1;
+}
+.slide-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
 }
 
 

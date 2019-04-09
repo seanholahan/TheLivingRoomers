@@ -13,21 +13,13 @@ class Merch extends Component {
 }
   render() {
     return (
-      <ReactCSSTransitionGroup
-                transitionName="example"
-                transitionAppearTimeout={600}
-                transitionEnterTimeout={500}
-                transitionLeaveTimeout={300}
 
-                transitionAppear={true}
-                transitionName={'loadComponent' }
-                >
                 <div id="merchContainer" className="content" key={this.props.location.pathname}>
               <h1 className="content--inner">YOU CAN'T BUY OUR SOULS</h1>
                 </div>
 
 
-        </ReactCSSTransitionGroup>
+    
 
 
 
