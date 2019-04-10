@@ -12,7 +12,7 @@
 
 .bgContainer {
   width:100vw;
-  height: calc(100vh - 80px);
+  height: calc(100% - 80px);
   top: 0;
   background-image: url( '../assets/bg.png' );
   background-repeat: no-repeat;
