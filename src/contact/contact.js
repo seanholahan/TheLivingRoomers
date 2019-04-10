@@ -16,6 +16,7 @@ class Contact extends Component {
     return (
 
       <div id='contact'>
+      <h2>CONTACT</h2>
         <div id='formContainer'>
            <form action="/action_page.php">
            <label>Name</label>
@@ -25,9 +26,9 @@ class Contact extends Component {
            <input type="email" id="email" name="email" placeholder="Your email" />
 
 
-           <label>Subject</label>
+           <label>Message</label>
            <textarea id="subject" name="subject" placeholder="Your message"></textarea>
-           <input type="submit" value="Send" />
+           <input type="submit"  value="Send" />
            </form>
          </div>
       </div>

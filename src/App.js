@@ -2,6 +2,7 @@
 
 import React, { Component }  from 'react';
 import { render } from 'react-dom';
+import Div100vh from 'react-div-100vh';
 import {
   Route,
   Switch,
@@ -13,10 +14,6 @@ import {
   Transition
 } from 'react-transition-group';
 import './App.css';
-
-
-
-
 import Home from './home/home';
 import Music from './music/music';
 import Shows from './shows/shows';
@@ -49,6 +46,7 @@ class App extends Component {
               classNames="fade"
               timeout={600}
             >
+              <Div100vh>
               <Switch location={location}>
               <Route exact path="/TheLivingRoomers" component={Home} />
               <Route exact path="/" component={Home} />
@@ -58,6 +56,7 @@ class App extends Component {
               <Route path="/shows" component={Shows} />
 
               </Switch>
+              </Div100vh>
             </CSSTransition>
           </TransitionGroup>
 

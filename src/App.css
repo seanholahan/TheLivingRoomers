@@ -51,6 +51,15 @@ font-size: x-large;
   opacity: 1;
   z-index: 1;
 }
+h2 {
+  text-align: START;
+  color: white;
+  font-family: 'Righteous', cursive;
+  font-weight:200;
+  margin-top:20px;
+  margin-bottom:0;
+
+}
 
 
 .slide-enter,

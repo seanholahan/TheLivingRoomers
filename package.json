@@ -13,6 +13,7 @@
     "react": "^16.8.4",
     "react-addons-css-transition-group": "^15.6.2",
     "react-breakpoints": "^3.0.3",
+    "react-div-100vh": "^0.3.2",
     "react-dom": "^16.8.4",
     "react-player": "^1.9.3",
     "react-router-dom": "^5.0.0",

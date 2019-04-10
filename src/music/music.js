@@ -9,21 +9,9 @@ import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 class Music extends Component {
 
-
   constructor(props) {
     super(props)
-
-
-
-
-
-
 }
-
-
-  
-
-
 
   render() {
 
@@ -50,7 +38,8 @@ class Music extends Component {
 
     return (
 
-    <div className="home2 content">
+    <div className="musicContainer content">
+    <h2 id="musicHeader">MUSIC</h2>
       <div className ="soundcloudWrapper content--inner">
       {soundcloudBoxes}
 
