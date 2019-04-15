@@ -1,22 +1,8 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
 import './navigation.css';
-import Button from '@material-ui/core/Button';
-import Menu from '@material-ui/core/Menu';
-import MenuItem from '@material-ui/core/MenuItem';
-import MenuList from '@material-ui/core/MenuList';
-import Grow from '@material-ui/core/Grow';
 import { Media } from 'react-breakpoints';
-import Icon from '@material-ui/core/Icon';
-import Link from 'react-router-dom/Link';
 import MobileMenu from '../mobileMenu/mobileMenu.js';
-import {CSSTransition,TransitionGroup,Transition
-} from 'react-transition-group';
-import {
-  Route,
-  NavLink,
-  Switch
-} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 class Navigation extends Component {
 
@@ -26,16 +12,13 @@ class Navigation extends Component {
   };
 
   handleClick = event => {
-    this.setState({ anchorEl: event.currentTarget });
+    console.log("location",this.location);
 
   };
 
-  handleClose = () => {
-    this.setState({ anchorEl: null });
-  };
+
   render() {
-    const { anchorEl,  } = this.state;
-    let nav = "navSlide";
+
     return (
 
 
@@ -48,23 +31,23 @@ class Navigation extends Component {
             <div className="nav">
             <div className="internalLinks">
             <NavLink exact to="/" className="logo">
-              <img className="logo" src={require('../assets/livingRoomersLogo2.png')}/>
+              <img className="logo" src={require('../assets/livingRoomersLogo2.png')} alt="Missing Icon"/>
             </NavLink>
-              <NavLink exact to="/music" className="link">Music</NavLink>
-              <NavLink exact to="/merch" className="link">Merch</NavLink>
-              <NavLink exact to="/shows" className="link">Live</NavLink>
-              <NavLink exact to="/contact" className="link">Book</NavLink>
+              <NavLink exact to="/music" onClick={this.handleClick} className="link" id="musicActive">Music</NavLink>
+              <NavLink exact to="/merch" className="link" id="merchActive">Merch</NavLink>
+              <NavLink exact to="/shows" className="link" id="showsActive">Live</NavLink>
+              <NavLink exact to="/contact" className="link" id="contactActive">Book</NavLink>
 
             </div>
             <div className='externalLinks'>
             <a target="_blank" href="https://open.spotify.com/artist/2nhVuKbeuDADrh4zuSYqsf" >
-              <img className="icon" src={require('../assets/spotify.png')}/>
+              <img className="icon" alt="Missing Icon" src={require('../assets/spotify.png')}/>
             </a>
             <a target="_blank" href="https://www.instagram.com/thelivingroomers/?hl=en">
-              <img className="icon" src={require('../assets/insta.png')}/>
+              <img className="icon" alt="Missing Icon" src={require('../assets/insta.png')}/>
             </a>
             <a target="_blank" href="https://www.facebook.com/thelivingroomersband/" >
-              <img className="icon" src={require('../assets/facebook.png')}/>
+              <img className="icon" alt="Missing Icon" src={require('../assets/facebook.png')}/>
             </a>
 
             </div>

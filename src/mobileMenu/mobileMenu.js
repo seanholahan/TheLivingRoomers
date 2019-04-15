@@ -24,7 +24,8 @@ class MobileMenu extends Component {
   constructor(props) {
   super(props);
   // Don't call this.setState() here!
-  this.state = { navId: "navMobileInactive" };
+  this.state = { navId: "navMobileInactive",
+                 exitBoxId: "exitBoxInactive"};
   console.log("stateBAte",this.state)
 
 }
@@ -35,9 +36,11 @@ class MobileMenu extends Component {
 
   handleClick = event => {
     if (this.state.navId == "navMobileInactive") {
-      this.setState({ navId: "navMobileActive" });
+      this.setState({ navId: "navMobileActive",
+                      exitBoxId: "exitBoxActive"});
     } else  {
-      this.setState({ navId: "navMobileInactive" });
+      this.setState({ navId: "navMobileInactive",
+                      exitBoxId: "exitBoxInactive"});
     }
 
   };
@@ -86,7 +89,7 @@ class MobileMenu extends Component {
                   <NavLink onClick={this.handleClick} exact to="/contact"   className="mobileLink">Book</NavLink>
                   </div>
               </div>
-              <div className="exitBox">
+              <div className="exitBox" onClick={this.handleClick}>
               </div>
           </div>
 

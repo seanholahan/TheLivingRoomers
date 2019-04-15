@@ -41,5 +41,6 @@ ReactPlayer {
 .song {
   margin-bottom: 60px;
   width: 100vw;
+  padding:10px;
 
 }

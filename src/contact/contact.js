@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import './contact.css';
 
 class Contact extends Component {
@@ -16,7 +15,7 @@ class Contact extends Component {
     return (
 
       <div id='contact'>
-      <h2>CONTACT</h2>
+      <h1 className="pageHeader">CONTACT</h1>
         <div id='formContainer'>
            <form action="/action_page.php">
            <label>Name</label>

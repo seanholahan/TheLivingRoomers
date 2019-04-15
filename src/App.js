@@ -1,7 +1,6 @@
 
 
 import React, { Component }  from 'react';
-import { render } from 'react-dom';
 import Div100vh from 'react-div-100vh';
 import {
   Route,
@@ -10,8 +9,7 @@ import {
 } from 'react-router-dom';
 import {
   CSSTransition,
-  TransitionGroup,
-  Transition
+  TransitionGroup
 } from 'react-transition-group';
 import './App.css';
 import Home from './home/home';
@@ -20,7 +18,6 @@ import Shows from './shows/shows';
 import Contact from './contact/contact';
 import Merch from './merch/merch';
 import Navigation from './navigation/navigation';
-import MobileMenu from './mobileMenu/mobileMenu';
 
 
 
@@ -33,7 +30,7 @@ class App extends Component {
           <Navigation/>
 
           <Route render={({ location }) => {
-            const { pathname, key } = location;
+          
 
             return (
 

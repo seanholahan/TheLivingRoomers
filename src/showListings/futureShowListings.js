@@ -2,50 +2,28 @@
 import React, { Component } from 'react';
 
 import './showListings.css';
-import Fade from '@material-ui/core/Fade';
-import {
-  CSSTransition,
-  TransitionGroup,
-  Transition
-} from 'react-transition-group';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+
 import Moment from 'react-moment';
 
-class ShowListings extends Component {
+class FutureShowListings extends Component {
   constructor(props){
         super(props);
         this.state = {
 
           error: null,
           isLoaded: false,
-          tourDates:null,
-
-
-
+          tourDates:null
         }
-
-
-
       }
 
       componentDidMount() {
 
-        fetch( 'https://rest.bandsintown.com/artists/The%20Living%20Roomers/events?app_id=48fd7be4e116c62000215ecb1c4acc78&date=all')//rest.bandsintown.com/artists/Skrillex/events
+        fetch( 'https://rest.bandsintown.com/artists/The%20Living%20Roomers/events?app_id=48fd7be4e116c62000215ecb1c4acc78&date=upcoming')//rest.bandsintown.com/artists/Skrillex/events
         .then(res => res.json())
         .then(response => this.setState ({error:null,
                                           isLoaded: true,
                                           tourDates: response}))
-      //  .then(response => console.log("heh",response.json()))
         .then(console.log("response",this.state))
-
-
-
-  //       var bandsintown = require('bandsintown')('48fd7be4e116c62000215ecb1c4acc78');
-  //       bandsintown
-          // .getArtistEventList('Skrillex')
-          // .then(function(events) {
-          //   console.log("events",events)
-          // });
       }
 
 
@@ -57,11 +35,20 @@ class ShowListings extends Component {
         } else if (!isLoaded) {
           return <div>Loading...</div>;
         } else {
+          if (tourDates.length == 0) {
+            return (
+              <div className="showListing">
+              <h3 className="noShows">CURRENTLY NO UPCOMING SHOWS</h3>
+              </div>
+            )
+
+          } else {
+
           return (
 
             <div>
               {tourDates.map(show => (
-                <div className="showListing">
+                <div className="showListing" key={show.url} >
 
 
                     <Moment className="eventDate" format="D MMM YYYY">{show.datetime}</Moment>
@@ -69,32 +56,16 @@ class ShowListings extends Component {
                     <h3>{show.venue.city},{show.venue.region}</h3>
 
 
-                    <a target="_blank" className="eventButton" href={show.url}>Buy Tickets</a>
+                    <a target="_blank" rel="noopener noreferrer" className="eventButton" href={show.url}>Buy Tickets</a>
 
                 </div>
 
               ))}
               </div>
-
-
-
-          );
+            );
+          }
         }
-
-
-
-
-
-        // if (this.state.tourDates ===null) {
-        //
-        // } else {
-        //   const tourDates = this.state.tourDates.map((link) =>
-        //                <h2>hi</h2>
-        //   )
-        // }
-
-
       }
     }
 
-    export default ShowListings;
+    export default FutureShowListings;

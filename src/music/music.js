@@ -1,17 +1,8 @@
 import React, { Component } from 'react';
-//import SoundCloud from 'react-soundcloud-widget';
-import Player from 'react-soundcloud-widget-player';
-import ReactSoundcloud from 'react-soundcloud-embed';
 import ReactPlayer from 'react-player';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import './music.css';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
-
 class Music extends Component {
 
-  constructor(props) {
-    super(props)
-}
 
   render() {
 
@@ -28,7 +19,7 @@ class Music extends Component {
                 key = {link}
                  url= {link}
                  height = '180px'
-                 width= '98vw'
+                 width = "100vw"
                  visual='true'
                   />
                  )
@@ -39,7 +30,7 @@ class Music extends Component {
     return (
 
     <div className="musicContainer content">
-    <h2 id="musicHeader">MUSIC</h2>
+    <h1 id="musicHeader">MUSIC</h1>
       <div className ="soundcloudWrapper content--inner">
       {soundcloudBoxes}
 
