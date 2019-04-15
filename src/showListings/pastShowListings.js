@@ -23,12 +23,12 @@ class PastShowListings extends Component {
         .then(response => this.setState ({error:null,
                                           isLoaded: true,
                                           tourDates: response}))
-        .then(console.log("response",this.state))
+
       }
 
 
       render() {
-        console.log("response",this.state);
+
         const { error, isLoaded, tourDates } = this.state;
         if (error) {
           return <div>Error: {error.message}</div>;

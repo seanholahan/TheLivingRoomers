@@ -43,7 +43,3 @@ class Music extends Component {
   }
 }
 export default Music;
-//<Player
-  //   title='EASYFUN - Be Your USA feat. Iiris'
-  //   audioUrl="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/449016357"
-  // />

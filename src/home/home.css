@@ -6,6 +6,9 @@
   position: absolute;
   background-size: cover;
 }
+home {
+  height:100%;
+}
 .SpotifyPlayer {
   align-self: center;
 }

@@ -13,7 +13,7 @@ class Home extends Component {
       <Div100vh>
       <div className="home">
       <div className="bgContainer">
-      <h1>NEW ALBUM OUT NOW!</h1>
+      <h2>NEW ALBUM OUT NOW!</h2>
 
 
       </div>
