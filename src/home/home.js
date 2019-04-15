@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import SpotifyPlayer from 'react-spotify-player';
 import './home.css';
-import Div100vh from 'react-div-100vh';
-
 class Home extends Component {
   render() {
     const size = {
@@ -10,7 +8,7 @@ class Home extends Component {
   height: 80,
 };
     return (
-      <Div100vh>
+
       <div className="home">
       <div className="bgContainer">
       <h2>NEW ALBUM OUT NOW!</h2>
@@ -25,7 +23,6 @@ class Home extends Component {
   theme="black"
 />
 </div>
-</Div100vh>
     );
   }
 }

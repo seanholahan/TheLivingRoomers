@@ -31,6 +31,8 @@
 #mobileNavContain {
   position: absolute;
   z-index: 12;
+  height: 100%;
+  pointer-events: none;
 }
 
 
@@ -40,12 +42,12 @@
   width: 100%;
   display: flex;
   justify-content: center;
-
+  pointer-events: initial;
   align-items: center;
 }
 
 .internalLinksMobile {
-
+  pointer-events: initial;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -165,6 +167,7 @@ position: absolute;
 bottom: 0;
 left: 0px;
 z-index: -28;
+pointer-events: initial;
 }
 
 
@@ -188,6 +191,7 @@ z-index: -28;
 
 height:100px;
   width:100vw;
+  pointer-events: initial;
 }
 
 
