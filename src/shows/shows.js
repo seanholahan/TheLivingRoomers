@@ -22,7 +22,7 @@ class Shows extends Component {
 
 
   render() {
-    console.log("response",this.state);
+
 
 
 

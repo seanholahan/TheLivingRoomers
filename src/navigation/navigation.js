@@ -7,15 +7,6 @@ import {NavLink} from "react-router-dom";
 class Navigation extends Component {
 
 
-  state = {
-    anchorEl: null
-  };
-
-  handleClick = event => {
-    console.log("location",this.location);
-
-  };
-
 
   render() {
 
@@ -33,10 +24,10 @@ class Navigation extends Component {
             <NavLink exact to="/" className="logo">
               <img className="logo" src={require('../assets/livingRoomersLogo2.png')} alt="Missing Icon"/>
             </NavLink>
-              <NavLink exact to="/music" onClick={this.handleClick} className="link" id="musicActive">Music</NavLink>
-              <NavLink exact to="/merch" className="link" id="merchActive">Merch</NavLink>
-              <NavLink exact to="/shows" className="link" id="showsActive">Live</NavLink>
-              <NavLink exact to="/contact" className="link" id="contactActive">Book</NavLink>
+              <NavLink exact activeStyle={{ borderBottom: '2px solid white' }} to="/music"  className="link" >Music</NavLink>
+              <NavLink exact activeStyle={{ borderBottom: '2px solid white' }} to="/merch" className="link" >Merch</NavLink>
+              <NavLink exact activeStyle={{ borderBottom: '2px solid white' }} to="/shows" className="link" >Live</NavLink>
+              <NavLink exact activeStyle={{ borderBottom: '2px solid white' }} to="/contact"  className="link" >Book</NavLink>
 
             </div>
             <div className='externalLinks'>

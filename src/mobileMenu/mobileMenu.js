@@ -45,7 +45,9 @@ class MobileMenu extends Component {
       onClick={this.handleClick}
       >
           <img id="hamburger" src={require('../assets/hamburgler.png')}/>
+          <NavLink exact to="/" className="logo">
           <img className="logo" src={require('../assets/livingRoomersLogo2.png')}/>
+          </NavLink>
       </div>
 
 
