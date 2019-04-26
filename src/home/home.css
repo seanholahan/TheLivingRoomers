@@ -47,3 +47,7 @@ align-items: flex-end;
   flex-direction: column;
 
 }
+
+#preLoad {
+  display: none;
+}

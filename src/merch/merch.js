@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './merch.css';
 
+
 class Merch extends Component {
 
   render() {

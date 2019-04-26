@@ -9,9 +9,20 @@ class Home extends Component {
 };
     return (
 
+
+
       <div className="home">
       <div className="bgContainer">
       <h2>NEW ALBUM OUT NOW!</h2>
+      <div id="preLoad">
+      <img src={require('../assets/blue.jpg')} />
+      <img src={require('../assets/bg.png')} />
+      <img src={require('../assets/cover.jpg')} />
+      <img src={require('../assets/merch.png')} />
+      <img src={require('../assets/live.png')} />
+      <img src={require('../assets/Book.JPG')} />
+
+      </div>
 
 
       </div>
