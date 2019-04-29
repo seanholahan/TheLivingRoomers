@@ -6,26 +6,38 @@
   position: absolute;
   background-size: cover;
 }
-home {
-  height:100%;
-}
-.SpotifyPlayer {
-  align-self: center;
-}
-
-.bgContainer {
-  width:100vw;
-  height: calc(100% - 80px);
-  top: 0;
+.home {
+  height:100vh;
   background-image: url( '../assets/bg.png' );
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 
-display: flex;
-justify-content: center;
-align-items: flex-end;
 }
+.SpotifyPlayer {
+  align-self: center;
+}
+
+#musicPlayer {
+  width:100%;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: orange;
+  background: none;
+  border-radius:0;
+}
+
+
+
+
+#player2 {
+  height: 80px;
+}
+
+
+
+
 
 @media only screen and (max-width: 650px) {
   .bgContainer {
@@ -39,13 +51,28 @@ align-items: flex-end;
 
 
   background-color: #282c34;
-
-
-
   display: flex;
   align-items: baseline;
   flex-direction: column;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 
+}
+
+#ReactPlayer {
+  background-color: red;
+  width:100%;
+}
+
+#newAlbum {
+  align-self: center;
+}
+
+#spotifyContainer {
+width: 100%;
+bottom: 0;
+height: 80px;
 }
 
 #preLoad {
