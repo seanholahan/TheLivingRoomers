@@ -1,27 +1,27 @@
 self.__precacheManifest = [
   {
-    "revision": "189b85635784a833614d",
-    "url": "/TheLivingRoomers/static/css/main.3669f840.chunk.css"
+    "revision": "2d8ee60fffc56eea4e50",
+    "url": "/TheLivingRoomers/static/css/main.8ef576e0.chunk.css"
   },
   {
-    "revision": "189b85635784a833614d",
-    "url": "/TheLivingRoomers/static/js/main.f0958bec.chunk.js"
+    "revision": "2d8ee60fffc56eea4e50",
+    "url": "/TheLivingRoomers/static/js/main.ff27ea55.chunk.js"
   },
   {
     "revision": "7ec009a3832cb04984b4",
     "url": "/TheLivingRoomers/static/js/runtime~main.42a1ada4.js"
   },
   {
-    "revision": "e8c73e1208529009d4bf",
-    "url": "/TheLivingRoomers/static/js/2.c6827372.chunk.js"
+    "revision": "2e47762bd341812bce04",
+    "url": "/TheLivingRoomers/static/js/2.b47e4bc1.chunk.js"
   },
   {
     "revision": "03837900865545f40f6e3070c1245ac2",
     "url": "/TheLivingRoomers/static/media/Seaweed.03837900.ogg"
   },
   {
-    "revision": "fd8724588748cad71c09776b2ce95509",
-    "url": "/TheLivingRoomers/static/media/facebook.fd872458.png"
+    "revision": "63d867018350a52de993fe35457d5800",
+    "url": "/TheLivingRoomers/static/media/spotify.63d86701.png"
   },
   {
     "revision": "195386ab65967df8e96acf3711b70192",
@@ -30,14 +30,6 @@ self.__precacheManifest = [
   {
     "revision": "2430360efa2d43cf271d413cf4811024",
     "url": "/TheLivingRoomers/static/media/bunny.2430360e.ogg"
-  },
-  {
-    "revision": "63d867018350a52de993fe35457d5800",
-    "url": "/TheLivingRoomers/static/media/spotify.63d86701.png"
-  },
-  {
-    "revision": "30fa0886f8b6840a53f5deb91f9722f5",
-    "url": "/TheLivingRoomers/static/media/insta.30fa0886.png"
   },
   {
     "revision": "c711aeaeb16ddd661ec690e93219e22c",
@@ -76,7 +68,7 @@ self.__precacheManifest = [
     "url": "/TheLivingRoomers/static/media/live.d68c615a.jpg"
   },
   {
-    "revision": "cd5a2febd152c307bdb379c7c8fe51df",
+    "revision": "8f49e6e02c1fbd3eb03526bb6d7b6402",
     "url": "/TheLivingRoomers/index.html"
   }
 ];
