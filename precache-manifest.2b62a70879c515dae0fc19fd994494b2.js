@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "2d8ee60fffc56eea4e50",
-    "url": "/TheLivingRoomers/static/css/main.8ef576e0.chunk.css"
+    "revision": "bf52a8fb7092a83a1ca5",
+    "url": "/TheLivingRoomers/static/css/main.5469b871.chunk.css"
   },
   {
-    "revision": "2d8ee60fffc56eea4e50",
-    "url": "/TheLivingRoomers/static/js/main.ff27ea55.chunk.js"
+    "revision": "bf52a8fb7092a83a1ca5",
+    "url": "/TheLivingRoomers/static/js/main.cb5f59f4.chunk.js"
   },
   {
     "revision": "7ec009a3832cb04984b4",
@@ -30,6 +30,10 @@ self.__precacheManifest = [
   {
     "revision": "2430360efa2d43cf271d413cf4811024",
     "url": "/TheLivingRoomers/static/media/bunny.2430360e.ogg"
+  },
+  {
+    "revision": "d91fc1abdcfe47ce178d3d722ccbc578",
+    "url": "/TheLivingRoomers/static/media/soundcloud.d91fc1ab.png"
   },
   {
     "revision": "c711aeaeb16ddd661ec690e93219e22c",
@@ -68,7 +72,7 @@ self.__precacheManifest = [
     "url": "/TheLivingRoomers/static/media/live.d68c615a.jpg"
   },
   {
-    "revision": "8f49e6e02c1fbd3eb03526bb6d7b6402",
+    "revision": "da5e7b003a2fec58dd8549f1ddaa0730",
     "url": "/TheLivingRoomers/index.html"
   }
 ];
